@@ -33,10 +33,13 @@ public class MenuController {
 	
 	@FXML
 	private Pane pane3;
-	
+
+	public MenuController() {
+		System.out.println("startPane");
+	}
 
 	public void exit(ActionEvent event) {
-		System.out.println("Exit");
+		System.exit(0);
 	}
 	
 	public void changeToPane1(ActionEvent event) {
@@ -45,8 +48,6 @@ public class MenuController {
 		pane1.setVisible(true);
 		pane2.setVisible(false);
 		pane3.setVisible(false);
-		
-		
 	}
 	
 	public void changeToPane2(ActionEvent event) {
